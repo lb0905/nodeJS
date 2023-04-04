@@ -1,0 +1,22 @@
+{
+  "name": "httpserver",
+  "version": "1.0.0",
+  "description": "staic server of node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "http-lb": "./bin/www.js"
+  },
+  "author": "liubo",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.2",
+    "commander": "^10.0.0",
+    "ejs": "^3.1.8",
+    "mime": "^3.0.0",
+    "mz": "^2.7.0",
+    "url": "^0.11.0"
+  }
+}

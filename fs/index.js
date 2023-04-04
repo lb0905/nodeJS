@@ -19,4 +19,8 @@ function copy(source, target) {
 }
 
 
-copy(path.resolve(__dirname, 'age.txt'), path.resolve(__dirname, 'name.txt'))
+// copy(path.resolve(__dirname, 'age.txt'), path.resolve(__dirname, 'name.txt'))
+
+console.log(fs.readFileSync('../tex7.txt', 'utf-8'))
+
+

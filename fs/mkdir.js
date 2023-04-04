@@ -18,8 +18,6 @@ function mkdirSynk(pathStr) {
     };
 }
 
-// mkdirSynk('a/b/c/d')
-
 function mkdir(pathStr) {
     const arr = pathStr.split('/');
     function next(index) {
@@ -40,6 +38,8 @@ function mkdir(pathStr) {
 }
 
 // mkdir('a/b/c/d')
+
+let reg = /[a-z]+(?=(?:[a-z\/])+$)/
 
 function rmdirSync(dir) {
     let statObj = fs.statSync(dir);
@@ -65,7 +65,6 @@ function rmdirSync2(dir) {
             fs.unlinkSync(dir)
         }
     }
-    console.log(arr)
     arr.reduceRight((accumulator, cur) => {
         fs.rmdirSync(cur)
     }, undefined)
@@ -119,7 +118,7 @@ function rmdir2(dir, callback) {
     })
 }
 
-rmdir2('a', () => console.log('shanchuwancheng'))
+// rmdir2('a', () => console.log('shanchuwancheng'))
 
 
 
